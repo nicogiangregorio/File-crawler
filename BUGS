@@ -1,0 +1,10 @@
+===============
+= KNSOWN BUGS =
+===============
+
+An exception occurrs whenever traversing a file or folder startin with a dot ".", aka hidden files.
+
+Example:
+/path/dir/.filename
+
+I am investigating on that.

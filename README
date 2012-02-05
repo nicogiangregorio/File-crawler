@@ -1,0 +1,18 @@
+================
+= File Crawler =
+================
+
+This code is about a very simple file crawler, 
+which allows to traverse a tree of filesystem starting from a given root folder and returns a map of pairs:
+
+[FILEPATH - HASH]
+
+where HASH is the binary content of file hashed with a given function.(You can pass "MD5", "SHA" or whatever you want among them supported by Java).
+
+It is multithreaded.
+You can define a pool of worker threads sizing a core dimension of pool, a maximum size, waiting time before discard a thread and size of tasks queue (tasks: files to be processed).
+Don't worry about saturation policy of queue, because it is managed by library.
+
+Further more you can define a buffer size of IO reading operation.
+
+
